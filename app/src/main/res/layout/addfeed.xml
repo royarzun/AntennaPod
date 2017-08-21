@@ -74,27 +74,6 @@
 
         <View style="@style/Divider"/>
 
-        <TextView
-            android:id="@+id/txtvOpmlImport"
-            style="@style/AntennaPod.TextView.Heading"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/opml_import_label"/>
-
-        <TextView
-            android:id="@+id/txtvOpmlImportExpl"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/opml_import_txtv_button_lable"
-            android:textSize="@dimen/text_size_medium"/>
-
-        <Button
-            android:id="@+id/butOpmlImport"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="@string/opml_import_label"/>
-
     </LinearLayout>
 
 </ScrollView>
