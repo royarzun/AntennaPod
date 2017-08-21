@@ -111,6 +111,7 @@ android {
     dexOptions {
         jumboMode true
     }
+    buildToolsVersion '25.0.0'
 }
 
 configurations {
@@ -137,7 +138,8 @@ dependencies {
     compile "com.android.support:percent:$supportVersion"
     compile "com.android.support:recyclerview-v7:$supportVersion"
     compile "org.apache.commons:commons-lang3:$commonslangVersion"
-    compile("org.shredzone.flattr4j:flattr4j-core:$flattr4jVersion") {
+    compile("org.shredzone.flattr4j:flattr4j-core:$flattr4jVersion")
+    {
         exclude group: "org.json", module: "json"
     }
     compile "commons-io:commons-io:$commonsioVersion"
@@ -153,18 +155,17 @@ dependencies {
     compile "com.artemzin.rxjava:proguard-rules:$rxJavaRulesVersion"
     compile "com.joanzapata.iconify:android-iconify-fontawesome:$iconifyVersion"
     compile "com.joanzapata.iconify:android-iconify-material:$iconifyVersion"
-    compile("com.github.afollestad.material-dialogs:commons:$materialDialogsVersion") {
+    compile("com.github.afollestad.material-dialogs:commons:$materialDialogsVersion")
+    {
         transitive = true
     }
     compile "com.yqritc:recyclerview-flexibledivider:$recyclerviewFlexibledividerVersion"
-    compile("com.githang:viewpagerindicator:2.5@aar") {
+    compile('com.githang:viewpagerindicator:2.5@aar')
+    {
         exclude module: "support-v4"
     }
-
     compile "com.github.shts:TriangleLabelView:$triangleLabelViewVersion"
-
     compile "com.github.AntennaPod:AntennaPod-AudioPlayer:$audioPlayerVersion"
-
     compile 'com.github.mfietz:fyydlin:v0.1'
 }
 
